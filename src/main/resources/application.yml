@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost:9092/mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  thymeleaf:
+    prefix: classpath:templates/view/
+    suffix: .html
+    cache: false
