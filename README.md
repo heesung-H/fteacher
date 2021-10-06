@@ -2,5 +2,7 @@
 - openJDK 17
 - java 11
 - Gradle 7.2
-- JPA
+
+- Thymeleaf
+- Spring Data JPA
 - H2 Database
